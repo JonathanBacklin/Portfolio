@@ -1,0 +1,23 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+
+.Navbar-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Navbar-content {
+  text-decoration: none;
+}
+
+
+
+.Navbar-container>* {
+  margin: 0 1rem;
+}

@@ -1,0 +1,38 @@
+.Form-container {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 1em;
+}
+
+.Form-group {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  padding: 1em;
+
+  margin: 10px auto;
+}
+
+.Form-group>* {
+  margin: 0 10px;
+  font-size: 24px;
+}
+
+.Form-group>input,
+.Form-group>textarea {
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  font-size: 18px;
+  width: 25%;
+}
+
+.Form-container button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 30px;
+}

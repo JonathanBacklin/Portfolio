@@ -1,0 +1,18 @@
+.Hero-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+}
+
+
+.Hero-content {
+  grid-column: 2 / 7;
+}
+
+.Hero-content h3 {
+  color: white;
+}
+
+.Hero {
+  grid-column: 8 / 12;
+}

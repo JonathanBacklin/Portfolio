@@ -1,0 +1,55 @@
+.Footer-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-bottom: 20px;
+}
+
+
+.Footer-buttons {
+  grid-column: 6 / 13;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Footer-buttons>* {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+
+.Footer-information {
+  grid-column: 1 / 6;
+  display: flex;
+  align-items: center;
+}
+
+.Footer-information>* {
+  font-weight: 500;
+}
+
+@media(max-width:767px) {
+
+  .Footer-information,
+  .Footer-buttons {
+    grid-column: 1/-1;
+  }
+
+
+  .Footer-information {
+    display: block;
+    text-align: center;
+  }
+
+
+  .Footer-information h2:nth-child(2) {
+    display: none;
+  }
+
+  .Footer-information h2 {
+    margin: 0;
+  }
+}

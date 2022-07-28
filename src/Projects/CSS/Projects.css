@@ -1,0 +1,40 @@
+.Grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  padding: 1em 0;
+}
+
+.Grid-title {
+  color: rgb(240, 32, 74);
+}
+
+.Grid-title,
+.Grid-smaller-title,
+.Grid-link {
+  margin: 20px 0;
+}
+
+.Grid-item {
+  border: 1px solid white;
+  padding: 1em;
+  border-radius: 5px;
+  margin: 5px auto;
+  color: white;
+  width: 90%;
+}
+
+.Grid-smaller-title {
+  font-weight: bold;
+}
+
+.Grid-link {
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  color: white;
+  border: 1px solid white;
+  padding: 0.5em;
+  border-radius: 5px;
+}
