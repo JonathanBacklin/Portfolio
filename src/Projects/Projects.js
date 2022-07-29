@@ -1,14 +1,15 @@
 import React from 'react'
 import "./CSS/Projects.css"
 import ProjectShell from './ProjectShell'
-import { ProjectJSONObject } from './ProjectsJSON'
+import { projectsInfo } from '../JSON/DevInfo'
+
 const Projects = () => {
 
   return (
     <div id='PROJECTS' className='Page-wrapper'>
       <h1 className="Section-title">projects</h1>
       <div className="Grid-container">
-        {ProjectJSONObject.map((x, index) =>
+        {projectsInfo.map((x, index) =>
           <ProjectShell  {...x} key={index} />
         )}
       </div>

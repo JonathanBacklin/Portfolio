@@ -1,6 +1,8 @@
 import React, { useRef, useState } from 'react'
 import "./CSS/Contact.css"
 import ReCAPTCHA from 'react-google-recaptcha'
+import { contactInfo } from '../JSON/DevInfo'
+
 const Contact = () => {
   const [successMessage, setSuccessMessage] = useState(false)
   const [disabled, setDisabled] = useState(false);
@@ -63,6 +65,8 @@ const Contact = () => {
 
 
       </form>
+      
+      <a href={`mailto:${contactInfo.email}`}>Send Email</a>
       <h1 className="Section-title-end">contact</h1>
     </div>
   )

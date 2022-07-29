@@ -1,17 +1,18 @@
 import React from 'react'
 import "./CSS/Hero.css"
-import profilepic from "../Assets/RoundJonte.png"
+import { devInfo } from '../JSON/DevInfo'
+
 const Hero = () => {
 
   return (
     <div className="Page-wrapper">
       <div className="Hero-container">
         <div className="Hero-content">
-          <h1 className="Hero-title">Hello! I am <span>Jonathan Bäcklin</span></h1>
-          <h3>Junior Frontend <span>Developer</span></h3>
+          <h1 className="Hero-title">Hello! I am <span>{devInfo.name} {devInfo.surname}</span></h1>
+          <h3>{devInfo.grade} {devInfo.specialization}<span> {devInfo.profession}</span></h3>
         </div>
         <div className="Hero">
-          <img src={profilepic} className="Hero-image" alt="" />
+          <img src={`/images/${devInfo.profilepic}.png`} className="Hero-image" alt="" />
         </div>
       </div>
 
