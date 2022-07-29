@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <>
       {width > breakpoint ?
-        <div className={scroll ? "Navbar navbar-scrolled" : "Navbar"}>
+        <div className={scroll ? "Navbar Navbar-scrolled" : "Navbar"}>
           <div className="Navbar-wrapper">
             <Link to="/" className='Navbar-content' onClick={scrollTop}><h2>LOGO</h2></Link>
             <div className="Navbar-container">
