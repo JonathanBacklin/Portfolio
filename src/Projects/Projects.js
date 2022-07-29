@@ -8,8 +8,8 @@ const Projects = () => {
     <div id='PROJECTS' className='Page-wrapper'>
       <h1 className="Section-title">projects</h1>
       <div className="Grid-container">
-        {ProjectJSONObject.map(x =>
-          <ProjectShell  {...x} />
+        {ProjectJSONObject.map((x, index) =>
+          <ProjectShell  {...x} key={index} />
         )}
       </div>
       <h1 className="Section-title-end">projects</h1>

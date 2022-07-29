@@ -61,7 +61,7 @@
   height: 10px;
   top: 24px;
   right: -6px;
-  background: rgb(240, 32, 74);
+  background: var(--secondary-color);
   border-radius: 50%;
   box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
 }
@@ -73,7 +73,7 @@
   height: 10px;
   top: 24px;
   left: -4px;
-  background: rgb(240, 32, 74);
+  background: var(--secondary-color);
   border-radius: 50%;
   box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
 }
@@ -81,7 +81,7 @@
 .timeline ul li h3 {
   padding: 0;
   margin: 0;
-  color: rgb(240, 32, 74);
+  color: var(--secondary-color);
   font-weight: 600;
 }
 
@@ -102,7 +102,7 @@
   right: -165px;
   margin: 0;
   padding: 8px 16px;
-  background: rgb(240, 32, 74);
+  background: var(--secondary-color);
   color: #fff;
   border-radius: 18px;
 
@@ -114,7 +114,7 @@
   left: -165px;
   margin: 0;
   padding: 8px 16px;
-  background: rgb(240, 32, 74);
+  background: var(--secondary-color);
   color: #fff;
   border-radius: 18px;
 

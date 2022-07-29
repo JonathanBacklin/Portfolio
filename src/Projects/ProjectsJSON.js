@@ -1,11 +1,11 @@
 export const ProjectJSONObject = [
   {
     "name": "StoryVerse",
-    "information": "Fivem Server Website",
+    "information": "Fivem Server",
     "url": "https://story-verse.net",
   },
   {
-    "name": "The Movie Database Website",
+    "name": "TMDB",
     "information": "A large movie website that contains all the necessary information about recent movies  ",
     "url": "https://jonathanbacklin.github.io/TMDB/",
   },
@@ -15,7 +15,7 @@ export const ProjectJSONObject = [
     "url": "https://github.com/JonathanBacklin/Benzen",
   },
   {
-    "name": "E-commerce website",
+    "name": "E-Commerce Application",
     "information": "Soda Store where you can use localstorage to purchase products, contains a backoffice where you can handle products",
     "url": "https://github.com/JonathanBacklin/E-commerce-example",
   },

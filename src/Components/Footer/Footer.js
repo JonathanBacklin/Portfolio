@@ -34,9 +34,9 @@ const Footer = () => {
         <h2>Stockholm {checkTime(currentHour)}:{checkTime(currentMinute)}</h2><h2>, {roundedTemp}&deg;</h2>
       </div>
       <div className="Footer-buttons">
-        <button>LinkedIn</button>
-        <button>Github</button>
-        <button>CV (PDF)</button>
+        <a href="https://github.com" target="_blank" rel='noreferrer'>LinkedIn</a>
+        <a href="https://github.com" target="_blank" rel='noreferrer'>Github</a>
+        <a href="https://github.com" target="_blank" rel='noreferrer'>CV (PDF)</a>
       </div>
     </div>
   )
