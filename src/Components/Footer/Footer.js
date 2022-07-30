@@ -11,7 +11,6 @@ const Footer = () => {
     const fetchData = async () => {
       let res = await fetch(URL)
       let resJson = await res.json()
-      console.log(resJson)
       setTemp(resJson.main.temp)
 
     }

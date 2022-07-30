@@ -1,0 +1,39 @@
+ const [recaptchaToken, setRecaptchaToken] = useState("")
+ const [email, setEmail] = useState("")
+ const [emailMessage, setEmailMessage] = useState("")
+
+
+
+ in handlesubmit function
+   recaptchaRef.current.reset();
+   emailValidation()
+
+
+
+ emailValidation
+     const emailValidation = () => {
+   const regEx = /[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,8}(.[a-z{2,8}])?/g
+   if (regEx.test(email)) {
+     setEmailMessage("Email is valid")
+   } else if (!regEx.test(email) && email === "") {
+     setEmailMessage("Invalid Email")
+   } else {
+     setEmailMessage("")
+   }
+ }
+ 
+  {/* <h3>{emailMessage}</h3> value={email}  */}
+
+
+   const recaptchaKey = "6LcclSwhAAAAAEVMyTccIIgZmEBu-lPjV-tyC1UD"
+ const recaptchaRef = useRef(null)
+
+ const updateRecaptchaToken = token => {
+   setRecaptchaToken(token)
+ }
+
+
+      {/* <ReCAPTCHA ref={recaptchaRef}
+            sitekey={recaptchaKey}
+           onChange={updateRecaptchaToken}
+           /> */}

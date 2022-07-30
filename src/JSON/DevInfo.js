@@ -1,15 +1,12 @@
 export const devInfo = {
-    name: 'Jonathan',
-    surname: 'Bäcklin',
-    profilepic: 'RoundJonte',
-    grade: 'Junior',
-    specialization: 'Frontend',
-    profession: 'Developer'
+  name: 'Jonathan',
+  surname: 'Bäcklin',
+  profilepic: 'RoundJonte',
+  grade: 'Junior',
+  specialization: 'Frontend',
+  profession: 'Developer'
 }
 
-export const contactInfo = {
-    email: 'jonathan.backlin@gmail.com',
-}
 
 export const projectsInfo = [
   {
@@ -43,3 +40,36 @@ export const projectsInfo = [
     url: "https://google.com",
   },
 ]
+
+export const aboutInfo = [
+  {
+    title: "Jensen Norra Gymnasium",
+    occupation: "STUDENT",
+    description: `Programming specialization information & media technology`,
+    timespan: "2018-2021"
+  },
+  {
+    title: "JENSEN YRKESHÖGSKOLA",
+    occupation: "STUDENT",
+    description: `Frontend developer specialization web security`,
+    timespan: "2021-2023"
+  },
+  {
+    title: "FREELANCING",
+    occupation: "JUNIOR FRONTEND DEVELOPER",
+    description: `Using React for StoryVerse  About to use Svelte & LUA`,
+    timespan: "2022"
+  },
+  {
+    title: "MICROAA LABS",
+    occupation: "JUNIOR FRONTEND DEVELOPER",
+    description: `React development`,
+    timespan: "2022"
+  },
+]
+
+
+
+export const contactInfo = {
+  email: 'jonathan.backlin@gmail.com',
+}
