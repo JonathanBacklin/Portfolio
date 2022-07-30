@@ -1,3 +1,14 @@
+.Transition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Transition-item {
+  display: flex;
+  justify-content: center;
+}
+
 .path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
@@ -15,7 +26,6 @@
 }
 
 .item {
-  width: 56%;
   overflow: visible;
   stroke: #fff;
   stroke-width: 2;

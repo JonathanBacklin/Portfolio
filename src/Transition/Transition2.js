@@ -1,6 +1,6 @@
 import React from 'react'
 import './CSS/Transitions.css'
-import Svg2 from './Svg2';
+import Svg from './Svg';
 
 const icon = {
   hidden: {
@@ -26,14 +26,13 @@ const transition = {
 // <motion.svg className={props.className} width = { props.width } height = { props.height }><motion.svg/>
 // <motion.path variants={props.variants} initial={props.initial} animate={props.animate} transition={props.transition}/>
 
-const Transition = () => {
+const Transition2 = () => {
   return (
     <div className='Page-wrapper'>
       <div className="Transition Transition-one">
 
-        <h1>design the website</h1>
-
-        <Svg2 variants={icon}
+        <h1>build the website</h1>
+        <Svg variants={icon}
           initial={icon.hidden}
           animate={icon.visible}
           transition={transition}
@@ -42,9 +41,24 @@ const Transition = () => {
           className={"item"}
           color={""}
         />
-      </div >
-    </div>
+      </div>
+      {/* <motion.svg
+        height={50}
+        width={50}
+        viewBox="0 0 100 100"
+        className="item"
+      >
+        <motion.path
+          d="M0 100V0l50 50 50-50v100L75 75l-25 25-25-25z"
+          variants={icon}
+          initial="hidden"
+          animate="visible"
+          transition={transition}
+        />
+      </motion.svg> */}
+
+    </div >
   )
 }
 
-export default Transition
+export default Transition2

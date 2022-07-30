@@ -16,6 +16,11 @@
   margin: 10px auto;
 }
 
+.Form-container a {
+  color: white;
+  text-decoration: none;
+}
+
 .Form-group:last-child {
   align-items: center;
 }

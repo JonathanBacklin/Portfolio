@@ -12,6 +12,8 @@
   /* font-family: Orbitron; */
   font-family: Montserrat;
   text-transform: uppercase;
+  /* border: 1px solid white; */
+  box-sizing: border-box;
 }
 
 .Page-wrapper {

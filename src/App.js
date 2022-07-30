@@ -3,6 +3,8 @@ import Contact from "./Contact/Contact";
 import Hero from "./Hero/Hero";
 import Projects from "./Projects/Projects";
 import Transition from "./Transition/Transition";
+import Transition2 from "./Transition/Transition2";
+import Transition3 from "./Transition/Transition3";
 
 const App = () => {
   return (
@@ -12,9 +14,9 @@ const App = () => {
       <Hero />
       <Transition />
       <Projects />
-      <Transition />
+      <Transition2 />
       <About />
-      <Transition />
+      <Transition3 />
       <Contact />
 
     </div>
