@@ -10,8 +10,8 @@
 }
 
 .Navbar-scrolled {
-  top: -100px;
-  padding: 5px;
+  /* top: -100px; */
+  padding: 0;
 }
 
 .Navbar-wrapper {
@@ -19,7 +19,7 @@
   justify-content: space-between;
   text-transform: uppercase;
   width: 90%;
-  margin: 0 auto;
+  margin: 5px auto;
   font-size: 14px;
 }
 
@@ -30,7 +30,7 @@
 
 .Navbar-content {
   text-decoration: none;
-  padding: 10px;
+  padding: 0 10px;
 }
 
 .Navbar-content:hover {
@@ -45,4 +45,17 @@
 
 .Navbar-container>* {
   margin: 0 1rem;
+}
+
+.scroll-up-button {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  font-size: 50px;
+  cursor: pointer;
+  color: white;
+  margin: 20px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  z-index: 3;
 }

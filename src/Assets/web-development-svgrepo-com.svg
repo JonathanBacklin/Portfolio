@@ -1,38 +1,17 @@
-import React, { useEffect } from 'react'
-import { motion, useAnimation } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
-import './CSS/Transitions.css'
-const Svg = props => {
-  const control = useAnimation()
-  const [ref, inView] = useInView()
-  const boxVariant = {
-    hidden: { opacity: 0.2, pathLength: 0 },
-    visible: {
-      opacity: 1,
-      pathLength: 1,
-      transition: { duration: 3, ease: 'easeInOut' }
-    },
-  };
-  useEffect(() => {
-    if (inView) {
-      control.start("visible");
-    } else {
-      control.start("hidden");
-    }
-  }, [control, inView]);
-  return (
-    <div className="Transition-item">
-      <motion.svg version="1.1" id="Capa_1" height={`${props.height}vh`} width={`${props.width}vw`} className={props.className} ref={ref}
-        viewBox="0 0 490 490">
-        <g>
-          <g>
-            <motion.path animate={control} variants={boxVariant} initial="hidden" d="M245.221,348.125c-56.477,0-102.424-46.162-102.424-102.903s45.947-102.904,102.424-102.904
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M245.221,348.125c-56.477,0-102.424-46.162-102.424-102.903s45.947-102.904,102.424-102.904
 			c56.476,0,102.424,46.163,102.424,102.904S301.698,348.125,245.221,348.125z M245.221,162.318
 			c-45.449,0-82.424,37.19-82.424,82.904c0,45.713,36.975,82.903,82.424,82.903c45.449,0,82.424-37.19,82.424-82.903
 			C327.645,199.508,290.67,162.318,245.221,162.318z"/>
-          </g>
-          <g>
-            <motion.path animate={control} variants={boxVariant} initial="hidden" d="M257.532,490h-0.001h-25.06c-24.58,0-44.579-20.078-44.58-44.758v-39.457c-5.296-1.908-10.519-4.091-15.625-6.532
+	</g>
+	<g>
+		<path d="M257.532,490h-0.001h-25.06c-24.58,0-44.579-20.078-44.58-44.758v-39.457c-5.296-1.908-10.519-4.091-15.625-6.532
 			l-27.732,27.875c-8.42,8.466-19.62,13.128-31.536,13.128c-11.915,0.001-23.117-4.66-31.539-13.125l-17.721-17.814
 			c-17.349-17.436-17.35-45.814-0.002-63.259l27.782-27.924c-2.442-5.154-4.627-10.43-6.534-15.782l-39.196-0.002
 			c-11.919,0-23.117-4.661-31.537-13.125c-8.407-8.448-13.038-19.682-13.038-31.628v-25.192c0-24.675,19.996-44.753,44.574-44.758
@@ -67,42 +46,36 @@ const Svg = props => {
 			c2.032,3.851,1.324,8.575-1.747,11.662l-32.824,32.993c-9.649,9.702-9.65,25.489,0.001,35.188l17.72,17.814
 			c4.659,4.683,10.85,7.261,17.431,7.261c6.581,0,12.77-2.579,17.427-7.262l32.826-32.995
 			C165.165,378.173,167.72,377.165,170.307,377.165z"/>
-          </g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-      </motion.svg>
-
-    </div >
-  )
-}
-
-export default Svg
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>

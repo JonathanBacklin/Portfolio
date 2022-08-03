@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import "./CSS/Navbar.css"
 import { HashLink as Link } from 'react-router-hash-link'
+import { FiArrowUp } from 'react-icons/fi'
 import UseResizeHook from '../UseResizeHook'
 const Navbar = () => {
   const [scroll, setScroll] = useState(0);
   const [toggleOpen, setToggleOpen] = useState(false)
+  const [scrollUp, setScrollUp] = useState(false)
   const [width, setWidth] = useState(window.innerWidth);
   const breakpoint = 960;
 
@@ -12,6 +14,11 @@ const Navbar = () => {
     const onScroll = () => {
       const scrollCheck = window.scrollY > 50;
       setScroll(scrollCheck);
+      if (window.scrollY > 500) {
+        setScrollUp(true)
+      } else {
+        setScrollUp(false)
+      }
     };
     document.addEventListener("scroll", onScroll);
     return () => {
@@ -35,14 +42,17 @@ const Navbar = () => {
               <Link to="#CONTACT" className="Navbar-content" smooth><h2>CONTACT</h2></Link>
             </div>
           </div>
-        </div> :
-
+        </div>
+        :
         <div className="Navbar">
           {toggleOpen ? <h1 onClick={handleToggle}>Open</h1> : <h1 onClick={handleToggle}>Close</h1>}
         </div>
 
 
+
         // Scrollbar progress bar
+      }
+      {scrollUp ? <FiArrowUp className='scroll-up-button' onClick={scrollTop} /> : null
       }
     </>
 

@@ -1,8 +1,7 @@
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react'
 import "./CSS/Contact.css"
-import ReCAPTCHA from 'react-google-recaptcha'
+// import ReCAPTCHA from 'react-google-recaptcha'
 import { contactInfo } from '../JSON/DevInfo'
-
 const Contact = () => {
   const [successMessage, setSuccessMessage] = useState(false)
   const [disabled, setDisabled] = useState(false);
@@ -19,7 +18,7 @@ const Contact = () => {
     <div id='CONTACT' className='Page-wrapper'>
       <h1 className="Section-title">contact</h1>
       <form className='Form-container'>
-        <h2>Contact me via <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a> or</h2>
+        <h2 style={{ padding: '0 1em' }}>Contact me via <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a> or</h2>
         <div className="Form-group">
           {successMessage ? <h3>Successfully sent email</h3> : null}
         </div>

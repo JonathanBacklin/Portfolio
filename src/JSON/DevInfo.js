@@ -30,14 +30,14 @@ export const projectsInfo = [
     url: "https://github.com/JonathanBacklin/E-commerce-example",
   },
   {
-    name: "Project 5",
-    information: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    url: "https://google.com",
+    name: "Crypto Project",
+    information: "Simple API project with React",
+    url: "https://github.com/JonathanBacklin/crypto",
   },
   {
-    name: "Project 6",
-    information: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    url: "https://google.com",
+    name: "Todolist",
+    information: "Todolist by using HTML/CSS & JS Classes",
+    url: "https://github.com/JonathanBacklin/TodoList",
   },
 ]
 
@@ -57,13 +57,13 @@ export const aboutInfo = [
   {
     title: "FREELANCING",
     occupation: "JUNIOR FRONTEND DEVELOPER",
-    description: `Using React for StoryVerse  About to use Svelte & LUA`,
+    description: `StoryVerse, Flight Development`,
     timespan: "2022"
   },
   {
     title: "MICROAA LABS",
     occupation: "JUNIOR FRONTEND DEVELOPER",
-    description: `React development`,
+    description: ``,
     timespan: "2022"
   },
 ]

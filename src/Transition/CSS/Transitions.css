@@ -27,7 +27,7 @@
 
 .item {
   overflow: visible;
-  stroke: #fff;
+  stroke: var(--secondary-color);
   stroke-width: 2;
   stroke-linejoin: round;
   stroke-linecap: round;

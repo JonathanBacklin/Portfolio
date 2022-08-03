@@ -5,7 +5,7 @@ import "aos/dist/aos.css"
 const ProjectShell = (props, { key }) => {
   useEffect(() => { Aos.init({ duration: 3000 }) }, [])
   return (
-    <div key={key} className='Grid-item' data-aos="fade-left">
+    <div key={key} className='Grid-item' data-aos="zoom-in-up">
       <div className="Grid-item-text">
         <h1 className='Grid-title'>{props.name}</h1>
         <h3 className='Grid-smaller-title'>{props.information}</h3>

@@ -8,6 +8,14 @@
   --secondary-color: rgb(240, 32, 74);
 }
 
+.Loading-screen {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
 * {
   /* font-family: Orbitron; */
   font-family: Montserrat;
@@ -17,11 +25,11 @@
 }
 
 .Page-wrapper {
-  margin: 5rem 0;
   width: 80%;
   margin: 0 auto;
   position: relative;
   min-height: 100vh;
+  padding: 2.5em 0;
 }
 
 html,
