@@ -11,7 +11,7 @@ const ProjectShell = (props, { key }) => {
         <h3 className='Grid-smaller-title'>{props.information}</h3>
       </div>
       <div className="Grid-item-button">
-        <a className='Grid-link' href={props.url} target='_blank' rel='noreferrer'>VISIT {props.name}</a>
+        <a className='Grid-link' href={props.url} target='_blank' rel='noreferrer'> <span>VISIT <br />{props.name}</span></a>
       </div>
     </div>
   )
