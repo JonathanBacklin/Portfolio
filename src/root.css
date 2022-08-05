@@ -98,4 +98,8 @@ h6 {
   .Section-title-end {
     text-align: center;
   }
+
+  .Page-wrapper {
+    min-height: auto;
+  }
 }
