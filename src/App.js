@@ -9,8 +9,13 @@ import Transition from "./Transition/Transition";
 import Transition2 from "./Transition/Transition2";
 import Transition3 from "./Transition/Transition3";
 import LoadingScreen from "./LoadingScreen"
+import UseResizeHook from "./Components/UseResizeHook";
 
 const App = () => {
+  const [width, setWidth] = useState(window.innerWidth);
+  const breakpoint = 1100;
+
+  UseResizeHook(setWidth);
   const [loading, setLoading] = useState(false)
   useEffect(() => {
     setTimeout(() => {
@@ -22,17 +27,26 @@ const App = () => {
   return (
     <>
       {loading ?
-        <div>
-          <Navbar />
-          <Hero />
-          <Transition />
-          <Projects />
-          <Transition2 />
-          <About />
-          <Transition3 />
-          <Contact />
-          <Footer />
-        </div >
+        <>
+          {width > breakpoint ?
+            <div>
+              <Navbar />
+              <Hero />
+              <Transition />
+              <Projects />
+              <Transition2 />
+              <About />
+              <Transition3 />
+              <Contact />
+              <Footer />
+            </div > :
+            <>
+              <Navbar />
+              <Footer />
+            </>
+          }
+        </>
+
         :
         <div className="Loading-screen">
           <LoadingScreen />
