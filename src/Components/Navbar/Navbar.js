@@ -33,6 +33,10 @@ const Navbar = () => {
   const scrollTop = () => { window.scrollTo({ top: 0, behavior: 'smooth' }); };
   const handleToggle = () => setToggleOpen(!toggleOpen)
 
+  const closeNavbar = () => {
+    setToggleOpen(false)
+
+  }
 
   return (
     <>
@@ -43,9 +47,9 @@ const Navbar = () => {
             <button onClick={handleToggle} className='Navbar-button'>{toggleOpen ? <MdClose /> : <FiMenu />}</button>
           </div>
           <div className={`Navbar-links ${toggleOpen ? 'showMenu' : null}`}>
-            <Link to='#PROJECTS' className="Navbar-link" smooth>PROJECTS</Link>
-            <Link to='#ABOUT' className="Navbar-link" smooth>ABOUT</Link>
-            <Link to='#CONTACT' className="Navbar-link" smooth>CONTACT</Link>
+            <Link to='#PROJECTS' onClick={closeNavbar} className="Navbar-link" smooth>PROJECTS</Link>
+            <Link to='#ABOUT' onClick={closeNavbar} className="Navbar-link" smooth>ABOUT</Link>
+            <Link to='#CONTACT' onClick={closeNavbar} className="Navbar-link" smooth>CONTACT</Link>
           </div>
         </div>
       </div>

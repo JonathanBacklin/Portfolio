@@ -98,11 +98,13 @@
   .Hero-title,
   .Hero-title-scramble {
     font-size: 35px;
+    text-align: center;
   }
 
   .Hero-subtitle,
   .Hero-subtitle-scramble {
     font-size: 30px;
+    text-align: center;
   }
 
 }
@@ -115,12 +117,13 @@
 
   .Hero-title,
   .Hero-title-scramble {
-    font-size: 20px;
+    font-size: 35px;
+
   }
 
   .Hero-subtitle,
   .Hero-subtitle-scramble {
-    font-size: 15px;
+    font-size: 25px;
   }
 
 }
