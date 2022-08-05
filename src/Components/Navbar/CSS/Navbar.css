@@ -1,4 +1,99 @@
-.Navbar {
+.Navbar-wrapper {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: var(--secondary-color);
+  margin: 0 auto;
+  padding: 1em;
+  z-index: 4;
+  transition: 250ms ease-in-out;
+}
+
+
+.Navbar-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.Navbar-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Navbar-button {
+  display: none;
+  color: white;
+}
+
+.Navbar-link,
+.Navbar-logo {
+  padding: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 10px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.Navbar-link:hover {
+  background-color: white;
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+}
+
+
+.Navbar-scrolled {
+  padding: 0.1em;
+  transition: 250ms ease-in-out;
+}
+
+@media (max-width:1000px) {
+  .Navbar-links {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: scroll;
+    list-style: none;
+    position: fixed;
+    top: 0;
+    background: var(--primary-color);
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 0;
+    overflow: hidden;
+  }
+
+  .Navbar-link {
+    margin: 10px 0;
+    font-size: 30px;
+    color: var(--secondary-color);
+  }
+
+  .Navbar-links.showMenu {
+    width: 100%;
+    transition: 150ms ease-in;
+  }
+
+
+  .Navbar-button {
+    display: block;
+    right: 40px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+  }
+
+}
+
+/* .Navbar {
   width: 100%;
   background-color: var(--secondary-color);
   position: sticky;
@@ -10,7 +105,6 @@
 }
 
 .Navbar-scrolled {
-  /* top: -100px; */
   padding: 0;
 }
 
@@ -58,4 +152,17 @@
   border-radius: 50%;
   background-color: var(--secondary-color);
   z-index: 3;
-}
+} */
+
+/* 
+@media (max-width:960px) {
+  .Navbar {
+    text-align: center;
+  }
+
+  .Navbar-wrapper,
+  .Navbar-container {
+    display: flex;
+    flex-direction: column;
+  }
+} */

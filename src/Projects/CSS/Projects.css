@@ -96,3 +96,26 @@
 .Grid-link:hover:after {
   width: 100%;
 }
+
+
+@media (max-width: 960px) {
+
+  .Grid-item-text,
+  .Grid-item-button {
+    grid-column: 1 /-1;
+    text-align: center;
+  }
+
+  .Grid-title {
+    font-size: 25px;
+  }
+
+  .Grid-smaller-title {
+    font-size: 15px;
+  }
+
+  .Grid-link {
+    width: 100%;
+  }
+
+}

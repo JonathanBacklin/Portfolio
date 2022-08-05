@@ -2,7 +2,7 @@ import React from 'react'
 
 const TimelineShell = (props, { key }) => {
   return (
-    <li>
+    <li key={key}>
       <div className="content">
         <h3>{props.title}</h3>
         <h4>{props.occupation}</h4>

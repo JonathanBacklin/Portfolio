@@ -20,8 +20,8 @@
   /* font-family: Orbitron; */
   font-family: Montserrat;
   text-transform: uppercase;
-  /* border: 1px solid white; */
   box-sizing: border-box;
+  word-wrap: break-word;
 }
 
 .Page-wrapper {
@@ -30,6 +30,11 @@
   position: relative;
   min-height: 100vh;
   padding: 2.5em 0;
+  scroll-snap-type: y mandatory;
+}
+
+.Page-wrapper:first-child {
+  scroll-snap-align: start;
 }
 
 html,
@@ -55,7 +60,7 @@ h6 {
   color: white;
 }
 
-@media(max-width:767px) {
+@media(max-width:960px) {
   h1 {
     font-size: 2rem;
 
@@ -84,4 +89,13 @@ h6 {
 .Section-title-end::after {
   content: '>';
 
+}
+
+
+@media(max-width:960px) {
+
+  .Section-title,
+  .Section-title-end {
+    text-align: center;
+  }
 }

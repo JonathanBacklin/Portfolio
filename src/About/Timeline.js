@@ -7,8 +7,8 @@ const Timeline = () => {
     <div>
       <div className="timeline ">
         <ul>
-          {aboutInfo.map(x =>
-            <TimelineShell {...x} />
+          {aboutInfo.map((x, key) =>
+            <TimelineShell {...x} key={key} />
           )}
           <div style={{ clear: 'both' }}></div>
         </ul>

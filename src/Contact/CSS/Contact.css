@@ -6,6 +6,10 @@
   padding: 1em;
 }
 
+.Form-container h2 {
+  text-align: center;
+}
+
 .Form-group {
   display: flex;
   flex-direction: column;
@@ -44,4 +48,14 @@
   color: white;
   cursor: pointer;
   font-size: 30px;
+}
+
+@media(max-width:960px) {
+  .Form-group>* {
+    font-size: 20px;
+  }
+
+  .Form-container h2 {
+    font-size: 20px;
+  }
 }

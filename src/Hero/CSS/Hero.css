@@ -8,6 +8,8 @@
 
 .Hero-content {
   grid-column: 1 / 8;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -22,11 +24,19 @@
 
 .Hero-title {
   font-size: 40px;
+  color: white;
 }
 
-.Hero-subtitle,
-.Hero-subtitle span {
-  font-size: 25px;
+.Hero-title-scramble,
+.Hero-subtitle-scramble {
+  font-size: 40px;
+  color: var(--secondary-color);
+}
+
+
+
+.Hero-subtitle {
+  font-size: 30px;
 }
 
 .Hero {
@@ -49,11 +59,11 @@
 
 @keyframes pulsate {
   0% {
-    box-shadow: 0 0 30px var(--secondary-color);
+    box-shadow: 0 0 50px var(--secondary-color);
   }
 
   50% {
-    box-shadow: 0 0 60px var(--secondary-color);
+    box-shadow: 0 0 100px var(--secondary-color);
   }
 
   /* 75% {
@@ -61,7 +71,7 @@
   } */
 
   100% {
-    box-shadow: 0 0 30px var(--secondary-color);
+    box-shadow: 0 0 50px var(--secondary-color);
   }
 }
 
@@ -79,9 +89,38 @@
 }
 
 
-@media(max-width:767px) {
+@media(max-width:960px) {
   .Hero-image {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
   }
+
+  .Hero-title,
+  .Hero-title-scramble {
+    font-size: 35px;
+  }
+
+  .Hero-subtitle,
+  .Hero-subtitle-scramble {
+    font-size: 30px;
+  }
+
+}
+
+@media(max-width:600px) {
+  .Hero-image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .Hero-title,
+  .Hero-title-scramble {
+    font-size: 20px;
+  }
+
+  .Hero-subtitle,
+  .Hero-subtitle-scramble {
+    font-size: 15px;
+  }
+
 }
