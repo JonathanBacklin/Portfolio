@@ -10,6 +10,8 @@ import Transition2 from "./Transition/Transition2";
 import Transition3 from "./Transition/Transition3";
 import LoadingScreen from "./LoadingScreen"
 import UseResizeHook from "./Components/UseResizeHook";
+import NavbarMobile from "./Components/Navbar/NavbarMobile";
+import HeroMobile from "./Hero/HeroMobile";
 
 const App = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -41,7 +43,8 @@ const App = () => {
               <Footer />
             </div > :
             <>
-              <Navbar />
+              <NavbarMobile />
+              <HeroMobile/>
               <Footer />
             </>
           }
