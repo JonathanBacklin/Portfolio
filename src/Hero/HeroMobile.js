@@ -15,9 +15,11 @@ const HeroMobile = () => {
     <div className="Page-wrapper">
       <div className="Hero-container" data-aos="zoom-in">
         <div className="Hero-content" >
-          <h1 className="Hero-title">Hello! I am <Scramble
+          
+          <h1 className="Hero-intro">Hello! I am</h1>
+          <h1 className='Hero-firstname'><Scramble
             autoStart
-            text={devInfo.name + " " + devInfo.surname}
+            text={devInfo.name}
             className="Hero-title-scramble"
             speed='medium'
             steps={[
@@ -32,7 +34,27 @@ const HeroMobile = () => {
               },
             ]}
           /></h1>
-          <h3 className='Hero-subtitle'>{devInfo.grade} {devInfo.specialization} <Scramble
+
+          <h1 className='Hero-surname'><Scramble
+            autoStart
+            text={devInfo.surname}
+            className="Hero-title-scramble"
+            speed='medium'
+            steps={[
+              {
+                roll: 30,
+                action: '+',
+                type: 'all',
+              },
+              {
+                action: '-',
+                type: 'forward',
+              },
+            ]}
+          /></h1>
+
+          <h3 className='Hero-subtitle'>{devInfo.grade} {devInfo.specialization}</h3>
+          <h3><Scramble
             autoStart
             text={devInfo.profession}
             className="Hero-subtitle-scramble"
@@ -49,6 +71,7 @@ const HeroMobile = () => {
               },
             ]}
           /></h3>
+
         </div>
       </div>
     </div>

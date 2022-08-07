@@ -1,3 +1,7 @@
+.Hero-container {
+  padding-top: 0;
+}
+
 .Hero-content,
 .Hero {
   grid-column: 1 / -1;
@@ -16,7 +20,7 @@
   color: var(--secondary-color)
 }
 
-.Hero-title {
+.Hero-intro {
   font-size: 40px;
   color: white;
 }
