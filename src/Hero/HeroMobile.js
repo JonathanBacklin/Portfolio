@@ -12,7 +12,7 @@ const HeroMobile = () => {
   useEffect(() => { Aos.init({ duration: 1000 }) }, []);
 
   return (
-    <div className="Page-wrapper">
+    <div id="HOME" className="Page-wrapper">
       <div className="Hero-container" data-aos="zoom-in">
         <div className="Hero-content" >
           

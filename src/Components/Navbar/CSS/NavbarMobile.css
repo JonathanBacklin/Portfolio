@@ -28,6 +28,6 @@ nav a:hover {
 }
 
 nav a.active {
-  background-color: var(--secondary-color);
+  background-color: var(--terciary-color);
   color: white;
 }

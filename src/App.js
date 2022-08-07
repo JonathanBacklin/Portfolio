@@ -12,7 +12,7 @@ import LoadingScreen from "./LoadingScreen"
 import UseResizeHook from "./Components/UseResizeHook";
 import NavbarMobile from "./Components/Navbar/NavbarMobile";
 import HeroMobile from "./Hero/HeroMobile";
-import ProjectMobile from "./Projects/ProjectMobile";
+import FooterMobile from "./Components/Footer/FooterMobile";
 
 const App = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -46,9 +46,7 @@ const App = () => {
             <>
               <NavbarMobile />
               <HeroMobile/>
-              <ProjectMobile/>
-
-              <Footer />
+              <FooterMobile />
             </>
           }
         </>

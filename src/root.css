@@ -6,6 +6,7 @@
 :root {
   --primary-color: #111;
   --secondary-color: rgb(240, 32, 74);
+  --terciary-color: rgb(128, 18, 40);
 }
 
 .Loading-screen {

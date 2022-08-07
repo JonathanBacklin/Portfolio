@@ -12,7 +12,7 @@ const NavbarMobile = () => {
 
   return (
     <nav>
-      <Link to="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><AiOutlineHome/></Link>
+      <Link to="#HOME" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><AiOutlineHome/></Link>
       <Link to="#PROJECTS" onClick={() => setActiveNav('#PROJECTS')} className={activeNav === '#PROJECTS' ? 'active' : ''}><BiBook/></Link>
       <Link to="#ABOUT" onClick={() => setActiveNav('#ABOUT')} className={activeNav === '#ABOUT' ? 'active' : ''}><AiOutlineUser/></Link>
       <Link to="#CONTACT" onClick={() => setActiveNav('#CONTACT')} className={activeNav === '#CONTACT' ? 'active' : ''}><BiMessageSquareDetail/></Link>
