@@ -47,6 +47,7 @@ const App = () => {
               <NavbarMobile />
               <HeroMobile/>
               <ProjectMobile/>
+
               <Footer />
             </>
           }

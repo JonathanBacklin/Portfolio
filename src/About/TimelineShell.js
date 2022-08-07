@@ -6,8 +6,7 @@ const TimelineShell = (props, { key }) => {
       <div className="content">
         <h3>{props.title}</h3>
         <h4>{props.occupation}</h4>
-        <p>{props.description}
-        </p>
+        <p>{props.description}</p>
       </div>
       <div className="time">
         <h4>{props.timespan}</h4>
