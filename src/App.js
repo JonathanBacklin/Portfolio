@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import About from "./About/About";
+import TimelineTwo from "./About/TimelineTwo";
 import Contact from "./Contact/Contact";
 import Hero from "./Hero/Hero";
 import Projects from "./Projects/Projects";
@@ -39,6 +40,7 @@ const App = () => {
               <Projects />
               <Transition2 />
               <About />
+              <TimelineTwo/>
               <Transition3 />
               <Contact />
               <Footer />

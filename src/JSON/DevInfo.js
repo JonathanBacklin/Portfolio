@@ -46,25 +46,33 @@ export const aboutInfo = [
     title: "Jensen Norra Gymnasium",
     occupation: "STUDENT",
     description: `Programming specialization information & media technology`,
-    timespan: "2018-2021"
+    timespan: "2018-2021",
+    timeStart: 2018,
+    timeEnd: 2021
   },
   {
     title: "JENSEN YRKESHÖGSKOLA",
     occupation: "STUDENT",
     description: `Frontend developer specialization web security`,
-    timespan: "2021-2023"
+    timespan: "2021-2023",
+    timeStart: 2021,
+    timeEnd: 2023
   },
   {
     title: "FREELANCING",
     occupation: "JUNIOR FRONTEND DEVELOPER",
     description: `StoryVerse, Flight Development`,
-    timespan: "2022"
+    timespan: "2022",
+    timeStart: 2022,
+    timeEnd: 2023
   },
   {
     title: "MICROAA LABS",
     occupation: "JUNIOR FRONTEND DEVELOPER",
     description: ``,
-    timespan: "2022"
+    timespan: "2022",
+    timeStart: 2022,
+    timeEnd: 2023
   },
 ]
 

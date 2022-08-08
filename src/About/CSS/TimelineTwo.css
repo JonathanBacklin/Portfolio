@@ -1,0 +1,9 @@
+.Timeline-two-container {
+  align-items: center;
+  width: 90%;
+  margin: auto 5% auto 5%;
+}
+
+.MuiSlider-markLabel.MuiSlider-markLabelActive.css-1eoe787-MuiSlider-markLabel {
+  color: white;
+}
