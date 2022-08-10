@@ -48,7 +48,7 @@ export const aboutInfo = [
     description: `Programming specialization information & media technology`,
     timespan: "2018-2021",
     timeStart: 2018,
-    timeEnd: 2021
+    timeEnd: 2021,
   },
   {
     title: "JENSEN YRKESHÖGSKOLA",
@@ -56,7 +56,7 @@ export const aboutInfo = [
     description: `Frontend developer specialization web security`,
     timespan: "2021-2023",
     timeStart: 2021,
-    timeEnd: 2023
+    timeEnd: 2023,
   },
   {
     title: "FREELANCING",
@@ -64,7 +64,7 @@ export const aboutInfo = [
     description: `StoryVerse, Flight Development`,
     timespan: "2022",
     timeStart: 2022,
-    timeEnd: 2023
+    timeEnd: 2023,
   },
   {
     title: "MICROAA LABS",
@@ -72,7 +72,7 @@ export const aboutInfo = [
     description: ``,
     timespan: "2022",
     timeStart: 2022,
-    timeEnd: 2023
+    timeEnd: 2023,
   },
 ]
 

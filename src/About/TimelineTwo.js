@@ -20,10 +20,6 @@ const marks = [
     value: 2022,
     label: "2022-Present",
   },
-  {
-    value: 2022,
-    label: "2022-Present",
-  },
 ];
 
 const PrettoSlider = styled(Slider)({
@@ -90,7 +86,7 @@ const TimelineTwo = () => {
         max={2022}
         onChange={handleSliderChange}
       />
-      <TimelineTwoCards selectedYear={selectedYear} />
+      <TimelineTwoCards selectedYear={selectedYear} key={selectedYear.title} />
     </div>
   )
 }

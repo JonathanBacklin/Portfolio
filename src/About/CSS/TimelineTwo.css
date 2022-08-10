@@ -13,3 +13,39 @@
 .MuiTypography-root.MuiTypography-h5.MuiTypography-gutterBottom.Timeline-title.css-h93ljk-MuiTypography-root {
   color: var(--secondary-color);
 }
+
+/* CARD STYLING */
+
+.Card-container {
+  width: 300px;
+  overflow: hidden;
+  box-shadow: 0 0 15px 15px;
+  background-color: #303030;
+  margin-top: 25px;
+  transition: 500ms;
+  animation: ease-in;
+  min-height: 275px;
+}
+
+.Card-container:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px 0;
+}
+
+.Card-content {
+  margin: 1rem;
+  margin-top: 0.5rem;
+}
+
+.Card-title h1 {
+  color: var(--secondary-color);
+}
+
+.Card-occupation h2, .Card-description h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.Card-title {
+  margin-bottom: 0.5rem;
+}
