@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './CSS/TimelineTwo.css'
 import Slider, { SliderThumb } from '@mui/material/Slider';
 import { styled } from '@mui/material/styles';
@@ -27,7 +27,7 @@ const marks = [
 ];
 
 const PrettoSlider = styled(Slider)({
-  color: '#52af77',
+  color: '#f0204a',
   height: 8,
   '& .MuiSlider-track': {
     border: 'none',
@@ -74,6 +74,9 @@ const TimelineTwo = () => {
       return value >= e.timeStart && value <= e.timeEnd
     }))
   }
+
+  useEffect(() => 
+  handleSliderChange('', 2018));
 
   return (
     <div className='Timeline-two-container'>
