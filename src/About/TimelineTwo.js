@@ -75,8 +75,9 @@ const TimelineTwo = () => {
     }))
   }
 
-  useEffect(() => 
-  handleSliderChange('', 2018));
+  useEffect (() => {
+    handleSliderChange('', 2018);
+  }, []);
 
   return (
     <div className='Timeline-two-container'>
