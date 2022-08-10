@@ -4,7 +4,7 @@
 
 .Hero-content,
 .Hero {
-  grid-column: 1 / -1;
+  /* grid-column: 1 / -1; */
   display: flex;
   flex-direction: column;
   justify-content: center;
