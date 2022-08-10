@@ -9,3 +9,7 @@
 .MuiSlider-markLabel.MuiSlider-markLabelActive.css-1eoe787-MuiSlider-markLabel {
   color: white;
 }
+
+.MuiTypography-root.MuiTypography-h5.MuiTypography-gutterBottom.Timeline-title.css-h93ljk-MuiTypography-root {
+  color: var(--secondary-color);
+}
