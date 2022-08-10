@@ -55,32 +55,32 @@ const Navbar = () => {
       </div>
       {/* {width > breakpoint ?
         <div className={scroll ? "Navbar Navbar-scrolled" : "Navbar"}>
-          <div className="Navbar-wrapper">
-            <Link to="/" className='Navbar-content' onClick={scrollTop}><h2>LOGO</h2></Link>
-            <div className="Navbar-container">
-              <Link to="#PROJECTS" className="Navbar-content" smooth><h2>PROJECTS</h2></Link>
-              <Link to="#ABOUT" className="Navbar-content" smooth><h2>ABOUT</h2></Link>
-              <Link to="#CONTACT" className="Navbar-content" smooth><h2>CONTACT</h2></Link>
-            </div>
-          </div>
+        <div className="Navbar-wrapper">
+        <Link to="/" className='Navbar-content' onClick={scrollTop}><h2>LOGO</h2></Link>
+        <div className="Navbar-container">
+        <Link to="#PROJECTS" className="Navbar-content" smooth><h2>PROJECTS</h2></Link>
+        <Link to="#ABOUT" className="Navbar-content" smooth><h2>ABOUT</h2></Link>
+        <Link to="#CONTACT" className="Navbar-content" smooth><h2>CONTACT</h2></Link>
+        </div>
+        </div>
         </div>
         :
         <div className="Navbar">
-          {toggleOpen ?
-            <div onClick={handleToggle} className="Navbar-wrapper">
-              <Link to="/" className='Navbar-content' onClick={scrollTop}><h2>LOGO</h2></Link>
-              <div className="Navbar-container">
-                <Link to="#PROJECTS" className="Navbar-content" smooth><h2>PROJECTS</h2></Link>
-                <Link to="#ABOUT" className="Navbar-content" smooth><h2>ABOUT</h2></Link>
-                <Link to="#CONTACT" className="Navbar-content" smooth><h2>CONTACT</h2></Link>
-              </div>
-            </div> : <h1 onClick={handleToggle}>Close</h1>}
-        </div>
+        {toggleOpen ?
+          <div onClick={handleToggle} className="Navbar-wrapper">
+          <Link to="/" className='Navbar-content' onClick={scrollTop}><h2>LOGO</h2></Link>
+          <div className="Navbar-container">
+          <Link to="#PROJECTS" className="Navbar-content" smooth><h2>PROJECTS</h2></Link>
+          <Link to="#ABOUT" className="Navbar-content" smooth><h2>ABOUT</h2></Link>
+          <Link to="#CONTACT" className="Navbar-content" smooth><h2>CONTACT</h2></Link>
+          </div>
+          </div> : <h1 onClick={handleToggle}>Close</h1>}
+          </div>
 
-
-
- Scrollbar progress bar
-} */}
+          
+          
+          Scrollbar progress bar
+        } */}
       {scrollUp ? <FiArrowUp className='scroll-up-button' onClick={scrollTop} /> : null
       }
     </>

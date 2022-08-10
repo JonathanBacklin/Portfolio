@@ -94,6 +94,19 @@
 
 }
 
+.scroll-up-button {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  font-size: 50px;
+  cursor: pointer;
+  color: white;
+  margin: 20px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  z-index: 3;
+}
+
 /* .Navbar {
   width: 100%;
   background-color: var(--secondary-color);
@@ -142,18 +155,7 @@
   margin: 0 1rem;
 }
 
-.scroll-up-button {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  font-size: 50px;
-  cursor: pointer;
-  color: white;
-  margin: 20px;
-  border-radius: 50%;
-  background-color: var(--secondary-color);
-  z-index: 3;
-} */
+ */
 
 /* 
 @media (max-width:960px) {
